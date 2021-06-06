@@ -7,7 +7,7 @@ class Conexion{
     function conectarDB(){
         try
 		{
-			$this->pdo = new PDO('mysql:host=localhost;dbname=store_database', 'merino', 'root');
+			$this->pdo = new PDO('mysql:host=192.168.0.105;dbname=store_database', 'merino', 'root');
 			$this->pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);		        
 		}
 		catch(Exception $e)
